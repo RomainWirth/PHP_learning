@@ -1,5 +1,5 @@
 <?php
-    var_dump('saisir un nombre pour définir le maximum et générer un nombre aléatoire (ne sois pas trop gourmand... haha');
+    var_dump('saisis un nombre pour définir le maximum et générer un nombre aléatoire (ne sois pas trop gourmand...');
     $maximumNumber = fgets(STDIN);
     $userNumber = NULL;
     $randomNumber = rand(0, $maximumNumber);
