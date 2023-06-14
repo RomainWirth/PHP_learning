@@ -1,7 +1,8 @@
-<div>
+<h1 class="flex-column justify-between align-center">Hello world !</h1>
+<div class="blue flex-column justify-between align-center w100">
     <h2>Ceci est le titre de About</h2>
-    <div>
-        <p>
+    <div class="flex-column justify-between align-center">
+        <p class="text">
             Phasellus bibendum mauris dolor, eget accumsan enim consequat ornare. Sed eu convallis ligula, non varius lacus.<br>
             Donec aliquam placerat consectetur. Donec fermentum, nisl et pellentesque mattis, odio nibh posuere arcu, ac euismod metus eros vel nibh.<br>
             Phasellus eget placerat risus. Etiam eget accumsan sem, a commodo nibh. Etiam tincidunt a lacus placerat viverra. Vivamus vel diam orci.<br>

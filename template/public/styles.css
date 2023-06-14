@@ -38,10 +38,25 @@
 .align-baseline {
     align-items: baseline;
 }
-nav {
+.w100 {
+    width: 100%;
+}
+.w70 {
+    width: 70%;
+}
+.w30 {
+    width: 30%;
+}
+#menu {
     min-width: 320px;
     max-width: 1080px;
 }
-nav ul li {
-    width: auto;
+.text {
+    text-align: center;
+}
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
 }

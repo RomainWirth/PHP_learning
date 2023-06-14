@@ -1,6 +1,7 @@
-<section>
+<h1 class="flex-column justify-between align-center">Hello world !</h1>
+<section class="red flex-column justify-between align-center w100">
     <h2>Ceci est un titre section 1</h2>
-    <div>
+    <div class="flex-column justify-between align-center">
         <p class="text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id ipsum sed risus fringilla efficitur ac sed nibh.<br>
             In venenatis interdum nunc. Sed convallis molestie orci, quis tristique ipsum eleifend in. In hac habitasse platea dictumst.<br>
@@ -23,9 +24,9 @@
         </p>
     </div>
 </section>
-<section>
+<section class="red flex-column justify-between align-center w100">
     <h2>Ceci est un titre section 2</h2>
-    <div>
+    <div class="flex-column justify-between align-center">
         <p class="text">
             Cras vestibulum sapien metus, sit amet tempus mauris hendrerit a. Etiam ut laoreet ante. Mauris rhoncus vel lorem sit amet euismod.<br>
             Pellentesque ut libero neque. Sed elit magna, porttitor vel nisl sit amet, gravida ornare tellus. Donec tempor ipsum non lorem tristique molestie.<br>

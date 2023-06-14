@@ -1,3 +1,4 @@
+<?php $title = 'Home'?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,15 +9,21 @@
 
     <link rel="stylesheet" href="./public/styles.css">
 
-    <title>Document</title>
+    <title><?php echo($title) ?></title>
 </head>
 <body>
     <?php include('./includes/header.php'); ?>
-    <h1>Hello world !</h1>
-    <main>
+    <main class="flex-column justify-around align-center">
+        <?php
 
+        if ($_GET['page'] == '' || $_GET['page'] == 'home') {
+            include('./includes/home.php');
+        }
+        if ($_GET['page'] == 'about') {
+            include('./includes/about.php');
+        }
+        ?>
     </main>
-    <?php include('./includes/home.php') ?>
     <?php include('./includes/footer.php') ?>
 </body>
 </html>
