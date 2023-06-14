@@ -16,12 +16,21 @@
     <main class="flex-column justify-around align-center">
         <?php
 
-        if ($_GET['page'] == '' || $_GET['page'] == 'home') {
-            include('./includes/home.php');
+        $getPage = $_GET['page'];
+        if (isset($getPage)) {
+            if ($getPage == '' || $getPage == 'home') {
+                include('./includes/home.php');
+            }
+            if ($getPage == 'about') {
+                include('./includes/about.php');
+            }
+        } else {
+            echo '404 page not found';
         }
-        if ($_GET['page'] == 'about') {
-            include('./includes/about.php');
-        }
+
+
+        require_once './BDD/config.php';
+        phpinfo();
         ?>
     </main>
     <?php include('./includes/footer.php') ?>
