@@ -1,2 +1,2 @@
 #ignorer le fichier de BDD (trop lourd)
-'./template/BDD/fuel-dataviz.sql'
+./template/BDD/fuel-dataviz.sql
