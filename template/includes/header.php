@@ -7,6 +7,7 @@
             <ul class="flex-column justify-start align-end w70">
                 <li><a href="/?page=home">Home</a></li>
                 <li><a href="/?page=about">About</a></li>
+                <li><a href="/?page=fuel">Fuel</a></li>
             </ul>
         </div>
     </nav>

@@ -16,21 +16,25 @@
     <main class="flex-column justify-around align-center">
         <?php
 
+//        phpinfo();
+
+        require_once './BDD/config.php';
+
         $getPage = $_GET['page'];
         if (isset($getPage)) {
-            if ($getPage == '' || $getPage == 'home') {
+            if ($getPage == 'home') {
                 include('./includes/home.php');
             }
             if ($getPage == 'about') {
                 include('./includes/about.php');
             }
+            if ($getPage == 'fuel') {
+                include('./includes/fuel.php');
+            }
         } else {
-            echo '404 page not found';
+            include('./includes/home.php');
         }
 
-
-        require_once './BDD/config.php';
-        phpinfo();
         ?>
     </main>
     <?php include('./includes/footer.php') ?>

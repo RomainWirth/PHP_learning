@@ -1,24 +1,25 @@
 <?php
+    // configuration
     $host = 'localhost';
     $db = 'fuel-dataviz';
     $user = 'postgres';
     $pwd = 'password';
 
-    function connect(string $host, string $db, string $user, string $password): PDO {
-        try {
-            $dsn = "pgsql:host=$host;port=5432;dbname=$db;";
-            // make a database connection
-            return new PDO(
-                $dsn,
-                $user,
-                $password,
-                [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
-            );
-        } catch (PDOException $e) {
-            die($e->getMessage());
+    // connection BDD
+    $dsn = "pgsql:host=$host;port=5432;dbname=$db;";
+    try {
+        // make a database connection
+        $pdo = new PDO(
+            $dsn,
+            $user,
+            $pwd,
+            [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
+        );
+        if ($pdo) {
+            echo "Connection à la base de données : $db établie";
         }
+    } catch (PDOException $error) {
+        die('Erreur : '.$error -> getMessage());
     }
-    return connect($host, $db, $user, $pwd);
-
 
 ?>
